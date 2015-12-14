@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SCalculator</string>
+
+    <string name="title_activity_about">About</string>
+    <string name="about">About</string>
+    <string name="name">Name : </string>
+    <string name="myName">Ngô Khắc Thành</string>
+    <string name="email">Email : </string>
+    <string name="myEmail">kingkid162@gmail.com</string>
+    <string name="phone">Phone :</string>
+    <string name="myPhone">01648375246</string>
+    <string name="classl">Class :</string>
+    <string name="myClass">Lớp B10-VAP-GDGHaNoi</string>
+    <string name="mentor">Mentor :</string>
+    <string name="myMentor">Quach Ngoc Xuan</string>
+    <string name="input">Nhập biểu thức</string>
+
+    <string name="source">GDG HaNoi</string>
+    <string name="start_button">Quick Start</string>
+
+    <string name="del">DEL</string>
+    <string name="ac">AC</string>
+
+    <string name="back">Back</string>
+    <string name="title_activity_fullscreen">First_Activity</string>
+
+</resources>

@@ -1,0 +1,178 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#2980b9"
+             tools:context=".FirstActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear"
+            android:layout_gravity="center_horizontal|bottom"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logoAndroid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/android"/>
+
+            <ImageView
+                android:src="@drawable/logo"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:id="@+id/logoGDG"
+                android:layout_gravity="right"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:textColor="#ecf0f1"
+            android:id="@+id/quick_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@drawable/quickstart_button"
+            android:onClick="QuickStart"
+            android:text="@string/start_button"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_below="@id/linear"
+            android:layout_above="@id/quick_start"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textColor="#ecf0f1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/name"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:textColor="#ecf0f1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/myName"
+                    android:layout_weight="3"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textColor="#ecf0f1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/email"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:textColor="#ecf0f1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/myEmail"
+                    android:layout_weight="3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textColor="#ecf0f1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/classl"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:textColor="#ecf0f1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/myClass"
+                    android:layout_weight="3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textColor="#ecf0f1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/phone"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:textColor="#ecf0f1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/myPhone"
+                    android:layout_weight="3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:textColor="#ecf0f1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/mentor"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:textColor="#ecf0f1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/myMentor"
+                    android:layout_weight="3"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+</FrameLayout>
