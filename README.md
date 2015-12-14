@@ -1,8 +1,9 @@
 # SCalculator (Simple Calculator)
-<br>Source Code on <a href="https://github.com/kingkid162/Android-Calculator">Github</a>
+<br>Source Code on <a href="https://github.com/kingkid162/Android-Calculator">github</a>
+
 ## Giới Thiệu
 SCalculator là 1 ứng dụng Android đơn giản. Ứng dụng có chức năng tính toán cộng, trừ, nhân, chia. Kết quả được làm tròn đến 5 chữ số thập phân. Ứng dụng sử dụng kí pháp ba lan ngược (Reverse Polish Notation ).
-<br/>+ Wiki Reverse Polish Notation: <a href="https://en.wikipedia.org/wiki/Reverse_Polish_notation">Bạn có thể tham khảo tại đây</a>.
+<br> + Wiki Reverse Polish Notation: <a href="https://en.wikipedia.org/wiki/Reverse_Polish_notation">Bạn có thể tham khảo tại đây.</a>
 
 ##Thành tựu
 Sau khi viết xong ứng dụng SCalculator, tôi đã biết :
