@@ -47,10 +47,7 @@ public class MainActivity extends AppCompatActivity {
         Ans = (TextView) findViewById(R.id.textView);
 
         // Chỉnh lại font cho ứng dụng
-        FontsOverride.setDefaultFont(this, "DEFAULT", "fonts/CaviarDreams.ttf");
-        FontsOverride.setDefaultFont(this, "MONOSPACE", "fonts/ostrich-regular.ttf");
-        FontsOverride.setDefaultFont(this, "SERIF", "fonts/CaviarDreams.ttf");
-        FontsOverride.setDefaultFont(this, "SANS_SERIF", "fonts/CaviarDreams.ttf");
+        FontsOverride.setDefaultFont(this, "SERIF", "fonts/ostrich-regular.ttf");
     }
 
 //    @Override
@@ -70,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Xử lý sự kiện Onclick khi bấm 1 nút
-     * @param view nút đang bấm
      */
     public void onClicked(View view) {
         Button btn = (Button) view;
@@ -100,8 +96,9 @@ public class MainActivity extends AppCompatActivity {
         } else if (isOperator(text.charAt(0)) ){    // Xử lý khi ấn toán tử
             btn.setBackgroundResource(R.drawable.button2);
             // Thêm dấu trừ nếu là số âm
-            if (screen.length()==0 && text.equals("-")){
-                screen += "-";
+            if (text.equals("-")){
+                if (screen.length()==0 || (screen.length()>0 && screen.charAt(screen.length()-1)== '(') )
+                    screen += "-";
             }
             // Nếu biểu thức không rỗng và kí tự cuối cùng không phải là toán tử thì thì thêm toán tử vào biểu thức
             if (!screen.equals("") && !isOperator(screen.charAt(screen.length()-1)) && screen.charAt(screen.length()-1)!='(') {

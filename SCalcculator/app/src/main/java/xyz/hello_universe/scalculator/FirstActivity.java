@@ -7,6 +7,9 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
@@ -14,6 +17,9 @@ import android.widget.Button;
 public class FirstActivity extends AppCompatActivity {
 
     private static final int AUTO_HIDE_DELAY_MILLIS = 3000;
+
+    private Button button;
+    private boolean tapped=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,15 +29,20 @@ public class FirstActivity extends AppCompatActivity {
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Start();
-            }
-        }, AUTO_HIDE_DELAY_MILLIS);
+        if (!tapped) {
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Start();
+                }
+            }, AUTO_HIDE_DELAY_MILLIS);
+        }
     }
 
+
     public void QuickStart(View view) {
+        button = (Button)view;
+        tapped = true;
         Start();
     }
 
